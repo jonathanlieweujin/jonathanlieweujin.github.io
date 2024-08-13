@@ -1,0 +1,408 @@
+body {
+    /* Set background image */
+    /* background-image: url("../images/grainy_bg.png"); */
+    background-color: #252526;
+    /* Make the background cover the entire viewport */
+    background-size: cover;
+    /* Optional: Center the background image */
+    background-position: center;
+    /* Optional: Fix the background image to prevent scrolling */
+    background-attachment: fixed;
+    /* Start from top left */
+    margin: 0;
+    padding: 0;
+}
+
+/* Outer container */
+.outer-container {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header Container */
+.header-container {
+    background-color: #F6F6F6;
+    padding: 24px 64px; 
+    box-sizing: border-box;
+    margin: 0;
+    gap: 200px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+#left-aligned-container{
+    width: 100%;
+}
+
+.right-aligned-container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: left;
+    padding: 0px;
+    flex: none;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.header-middle-btns{
+    margin: 0 auto 0 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 64px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hoverable-text{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252526;
+}
+
+.hoverable-text:hover{
+    color: #E83636;
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+.right-btns{
+    margin: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    gap: 32px;
+}
+
+.header-svg-btn{
+    display: inline-block;
+}
+
+.header-svg-btn:hover{
+    cursor: pointer;
+}
+
+.header-svg-btn:hover path {
+    fill: #E83636;
+    transition: fill 300ms ease;
+}
+/* End Header Container */
+
+/* Content */
+.content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0px;
+    gap: 40px;
+    width: 100%;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.content-1 .container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 20px;
+    width: 40%;
+    min-width: 550px;
+    border: 1px solid #E2E8F0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.content-1 .container .text-1{
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    color: #E2E8F0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.text-2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0px;
+    gap: 72px;
+    width: 100%;
+    background: #F9F2B0;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.content-header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 40%;
+    min-width: 850px;
+    background: #242526;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.lower-outer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    min-width: 900px;
+    width: 40%;
+    height: 327px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    margin: 0 auto;
+    width: 521px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.left-bottom-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    margin: 0 auto;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.input-field-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.input-field{
+    width: 30%;
+    height: 50px;
+    padding-left: 5px;
+}
+
+.send-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 100%;
+    background: #242526;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.send-btn{
+    cursor: pointer;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 100%;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.description-1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    color: #242526;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.description-2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #242526;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.submission-comment{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    color: #0e6617;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+/* End Content */
+
+/* Footer container */
+.footer-container{
+    background-color: #F6F6F6;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0;
+    padding: 24px 64px;
+    gap: 10px;
+    max-width: 100%; 
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.footer-container .frame{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footer-container .frame div{
+    display: inline-flex;
+    width: 165px;
+    height: 24px;
+    top:50%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #252526;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-container .frame .vector-container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 145.31px;
+    height: 25px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+

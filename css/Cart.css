@@ -1,0 +1,549 @@
+body {
+    /* Set background image */
+    /* background-image: url("../images/grainy_bg.png"); */
+    background-color: #252526;
+    /* Make the background cover the entire viewport */
+    background-size: cover;
+    /* Optional: Center the background image */
+    background-position: center;
+    /* Optional: Fix the background image to prevent scrolling */
+    background-attachment: fixed;
+    /* Start from top left */
+    margin: 0;
+    padding: 0;
+}
+/* Outer container */
+.outer-container {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header Container */
+.header-container {
+    background-color: #F6F6F6;
+    padding: 24px 64px; 
+    box-sizing: border-box;
+    margin: 0;
+    gap: 200px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+#left-aligned-container{
+    width: 100%;
+}
+
+.right-aligned-container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: left;
+    padding: 0px;
+    flex: none;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.header-middle-btns{
+    margin: 0 auto 0 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 64px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hoverable-text{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252526;
+}
+
+.hoverable-text:hover{
+    color: #E83636;
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+.right-btns{
+    margin: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    gap: 32px;
+}
+
+.header-svg-btn{
+    display: inline-block;
+}
+
+.header-svg-btn:hover{
+    cursor: pointer;
+}
+
+.header-svg-btn:hover path {
+    fill: #E83636;
+    transition: fill 300ms ease;
+}
+/* Content */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0px;
+    gap: 60px;
+    width: 100%;
+    background: #F9F2B0;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #242526;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.lower-outer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 1174.2px;
+    height: 493px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.right-container{
+    display: inline-block;
+}
+
+.voucher-section {
+    background-color: #fafafa;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 25px 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.7);
+  }
+
+  .voucher-header {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+  }
+
+  .voucher-title {
+    color: var(--C1-A, #151515);
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+  }
+
+  .voucher-optional {
+    color: #a7a7a7;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    margin: auto 0;
+  }
+
+  .voucher-form {
+    display: flex;
+    margin-top: 23px;
+    gap: 13px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .voucher-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--C1-A, #151515);
+    justify-content: center;
+  }
+
+  .voucher-input {
+    font-family: Inter, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 1);
+    align-items: start;
+    justify-content: center;
+    padding: 17px 19px;
+  }
+
+  .voucher-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .voucher-button {
+    font-family: Inter, sans-serif;
+    background-color: #000;
+    justify-content: center;
+    padding: 17px 51px;
+    color: #F6F6F6;
+  }
+
+  .subtotal-section {
+    display: flex;
+    margin-top: 31px;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--C1-A, #151515);
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  .subtotal-label {
+    font-family: Poppins, sans-serif;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .subtotal-amount {
+    font-family: Inter, sans-serif;
+    align-items: start;
+    text-align: right;
+    justify-content: center;
+    margin: auto 0;
+    padding: 3px 0 3px 17px;
+  }
+
+  .total-section {
+    display: flex;
+    margin-top: 48px;
+    width: 100%;
+    gap: 20px;
+    font-weight: 400;
+    justify-content: space-between;
+  }
+
+  .total-label-wrapper {
+    display: flex;
+    gap: 12px;
+  }
+
+  .total-label {
+    color: var(--C1-A, #151515);
+    font: 20px Inter, sans-serif;
+  }
+
+  .total-tax {
+    color: #a7a7a7;
+    margin: auto 0;
+    font: 15px Inter, sans-serif;
+  }
+
+  .total-amount {
+    color: var(--C1-A, #151515);
+    text-align: right;
+    font: 20px Inter, sans-serif;
+  }
+
+  .checkout-button {
+    background-color: #000;
+    margin-top: 17px;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 60px;
+    font: 700 20px Inter, sans-serif;
+  }
+
+  .checkout-button:hover{
+    background-color: #F6F6F6;
+    color: #000;
+    transition-property: color, background;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    cursor: pointer;
+  }
+
+  .cart-container {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.7);
+    background-color: #fafafa;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    padding: 35px 0;
+  }
+
+  .cart-header {
+    display: flex;
+    margin-left: 25px;
+    width: 635px;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--C1-A, #151515);
+    font-weight: 700;
+    justify-content: space-between;
+    padding: 0 2px;
+  }
+
+  .unit-price {
+    text-align: right;
+    font-family: Inter, sans-serif;
+  }
+
+  .qty-total {
+    display: flex;
+    gap: 104px;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  .qty {
+    text-align: center;
+    font-family: Inter, sans-serif;
+  }
+
+  .total {
+    text-align: right;
+    font-family: Inter, sans-serif;
+  }
+
+  .divider {
+    border-color: rgba(222, 222, 222, 0.1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(222, 222, 222, 0.1);
+    margin-top: 12px;
+    height: 2px;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 27px 27px 0;
+  }
+
+  .product-info {
+    align-self: stretch;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .product-image {
+    aspect-ratio: 0.81;
+    object-fit: auto;
+    object-position: center;
+    width: 67px;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+
+  .product-name {
+    width: 126.84px;
+    color: var(--C1-A, #151515);
+    font-family: Inter, sans-serif;
+  }
+
+  .product-description {
+    color: #a1a1a1;
+    font-family: Inter, sans-serif;
+    margin-top: 17px;
+  }
+
+  .product-price {
+    color: var(--C1-A, #151515);
+    text-align: center;
+    font-family: Inter, sans-serif;
+    align-self: stretch;
+    margin: auto 0;
+    width: 48.94px;
+  }
+
+  .product-quantity {
+    align-self: stretch;
+    display: flex;
+    gap: 19px;
+    font-size: 20px;
+    color: var(--C1-A, #151515);
+    white-space: nowrap;
+    margin: auto 0;
+  }
+
+  .quantity-button {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  .quantity {
+    font-family: Poppins, sans-serif;
+    margin: auto 0;
+  }
+
+  .product-total {
+    align-self: stretch;
+    display: flex;
+    gap: 20px;
+    color: var(--C1-A, #151515);
+    white-space: nowrap;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto 0;
+  }
+
+  .total-price {
+    font-family: Inter, sans-serif;
+    width: 48.94px;
+  }
+
+  .remove-button {
+    aspect-ratio: 1.09;
+    object-fit: auto;
+    object-position: center;
+    width: 13px;
+    align-self: start;
+  }
+
+  .white-divider {
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: #fff;
+    margin-top: 25px;
+    height: 2px;
+  }
+
+  .minus:hover{
+    cursor: pointer;
+}
+
+.minus:hover path {
+    fill: #E83636;
+    transition: fill 300ms ease;
+}
+
+.plus:hover{
+    cursor: pointer;
+}
+
+.plus:hover path {
+    fill: #E83636;
+    transition: fill 300ms ease;
+}
+
+#remove-btn:hover path {
+    fill: #E83636;
+    transition: fill 300ms ease;
+}
+
+#remove-btn:hover{
+    cursor: pointer;
+}
+
+#add-here{
+    height: 365px;
+    overflow: auto;
+}
+/* End of Content */
+
+/* Footer container */
+.footer-container{
+    background-color: #F6F6F6;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0;
+    padding: 24px 64px;
+    gap: 10px;
+    max-width: 100%; 
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.footer-container .frame{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footer-container .frame div{
+    display: inline-flex;
+    width: 165px;
+    height: 24px;
+    top:50%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #252526;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-container .frame .vector-container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 145.31px;
+    height: 25px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
